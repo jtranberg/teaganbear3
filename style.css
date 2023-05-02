@@ -1,0 +1,136 @@
+body
+{
+    display: flex;
+    background: #333;
+}
+
+.teaganbear
+{
+
+animation: hue .2s linear infinite;
+}
+.blur
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+     animation: blur 1s linear infinite;
+}
+@keyframes blur 
+{
+    0%
+    {
+        filter: blur(.5px);
+    }
+    10%
+    {
+        filter: blur(.7px);
+    }
+    20%
+    {
+        filter: blur(0px);
+    }
+    30%
+    {
+        filter: blur(.5px);
+    }
+    40%
+    {
+        filter: blur(.3px);
+    }
+    50%
+    {
+        filter: blur(1px);
+    }
+    60%
+    {
+        filter: blur(0px);
+    }
+    70%
+    {
+        filter: blur(1px);
+    }
+    80%
+    {
+        filter: blur(0.3px);
+    }
+    90%
+    {
+        filter: blur(1px);
+    }
+    100%
+    {
+        filter: blur(0px);
+    }
+    
+}
+
+
+.bear
+{
+    position: relative;
+    margin-top: 2rem;
+    padding:1rem;
+    height: 11rem;
+    width: 15rem;
+    background-color: transparent;
+    animation: scale ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    box-shadow: 10px 1px 10px 1.5px;
+    border-radius: 50%;
+    
+}
+
+@keyframes hue 
+{
+    0%, 100%
+        {
+            
+       filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(7deg) brightness(80%) contrast(83%) ;
+        }
+    25%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(10deg) brightness(150%) contrast(83%) ;
+        }
+    35%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(80%) contrast(83%) ;
+        }
+    50%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(80%) contrast(83%) ;
+        }
+    65%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(10deg) brightness(150%) contrast(83%) ;
+        }
+    75%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(6deg) brightness(10%) contrast(83%) ;
+       
+        }
+    80%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(15deg) brightness(75%) contrast(83%) ;
+        }
+    95%
+        {
+        filter: invert(57%) sepia(96%) saturate(3392%) hue-rotate(7deg) brightness(120%) contrast(83%) ;
+        }
+    
+}
+
+@keyframes scale
+ {
+    0%
+    {
+        filter: blur(75px);
+        scale: 0;
+    }
+    100%
+    {
+        filter: blur(0px);
+        scale: 1;
+    }
+}
